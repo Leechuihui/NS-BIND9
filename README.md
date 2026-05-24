@@ -19,6 +19,6 @@ sudo systemctl restart named
 
 dig @127.0.0.1 AXFR nsa.gov
 
-Output (HTML):
+
 
 ![Output HTML Report](asset/BIND9.png)
