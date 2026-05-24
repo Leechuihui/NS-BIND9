@@ -8,10 +8,14 @@ You can update your system with unsupported packages from this untrusted PPA by 
 sudo add-apt-repository ppa:isc/bind
 sudo apt update
 
+#Start to record wirrten conf
 
 sudo cp named.conf.local /etc/bind/
+
 sudo cp db.nsa.gov /etc/bind/
+
 sudo cp named /etc/default/named
+
 # Forces IPv4 only
 
 sudo systemctl restart named
