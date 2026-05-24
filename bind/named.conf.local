@@ -1,0 +1,5 @@
+zone "nsa.gov" {
+    type master;
+    file "/etc/bind/db.nsa.gov";
+    allow-transfer { any; };
+};

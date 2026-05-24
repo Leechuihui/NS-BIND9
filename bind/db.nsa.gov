@@ -1,0 +1,34 @@
+$TTL 3600
+@ IN SOA ns1.nsa.gov. root.nsa.gov. (
+        2007010401 ; Serial
+        3600       ; Refresh
+        600        ; Retry
+        86400      ; Expire
+        600 )      ; Negative Cache TTL
+
+@ IN NS ns1.nsa.gov.
+@ IN NS ns2.nsa.gov.
+@ IN MX 10 mail1.nsa.gov.
+@ IN MX 20 mail2.nsa.gov.
+
+fedora    IN TXT  "The black sparrow password"
+fedora    IN AAAA fd7f:bad6:99f2::1337
+fedora    IN A    10.1.0.80
+firewall  IN A    10.1.0.105
+fw        IN A    10.1.0.102
+mail1     IN TXT  "v=spf1 a mx ip4:10.1.0.25 ~all"
+mail1     IN A    10.1.0.25
+mail2     IN TXT  "v=spf1 a mx ip4:10.1.0.26 ~all"
+mail2     IN A    10.1.0.26
+ns1       IN A    10.1.0.50
+ns2       IN A    10.1.0.51
+prism     IN A    172.16.40.1
+prism6    IN AAAA ::1
+sigint    IN A    10.1.0.101
+snowden   IN A    172.16.40.1
+vpn       IN A    10.1.0.103
+web       IN CNAME fedora.nsa.gov.
+webmail   IN A    10.1.0.104
+www       IN CNAME fedora.nsa.gov.
+xkeyscore IN TXT  "knock twice to enter"
+xkeyscore IN A    10.1.0.100
